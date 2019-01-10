@@ -1,0 +1,12 @@
+---
+  - hosts: webservers
+    become: yes
+
+    tasks:
+    - name: install Java
+      yum: name=java-1.8.0-openjdk state=latest
+    - name: add group "devops"
+      group: name=devops
+
+    - name: add user "devops"
+      user: name=devops group=devops
