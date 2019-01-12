@@ -1,6 +1,7 @@
 ---
 - name: Httpd Play
   hosts: webservers
+  remote_user: ansible
   become: yes
 
   vars:
