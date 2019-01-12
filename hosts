@@ -1,3 +1,6 @@
+web1 ansible_host=10.0.0.82
+web2 ansible_host=10.0.0.27
+
 [webservers]
-ansible_host=10.0.0.82
-ansible_host=10.0.0.27
+web1
+web2
