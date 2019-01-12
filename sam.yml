@@ -15,4 +15,4 @@
   - name: start Httpd
     service: name=httpd state=started enabled=yes
   - name: copy index file
-    copy: src=/home/ansible/index.html dest={{ assets_dir }} mode=0755
+    copy: src=${WORKSPACE}index.html dest={{ assets_dir }} mode=0755
