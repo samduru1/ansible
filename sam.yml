@@ -15,5 +15,5 @@
   - name: start Httpd
     service: name=httpd state=started enabled=yes
   - name: copy index file
-    copy: src=/var/lib/jenkins/workspace/index.html dest={{ assets_dir }} mode=0755
+    copy: src=/var/lib/jenkins/workspace/test2/index.html dest={{ assets_dir }} mode=0755
     become: yes
