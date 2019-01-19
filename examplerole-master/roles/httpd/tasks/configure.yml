@@ -1,0 +1,5 @@
+---
+  - name: create default site configurations
+    copy: src={{ source_dir }}/httpd.conf dest=/etc/httpd/conf/httpd.conf mode=0644
+  - name: create home page for default site
+    copy: src={{ source_dir }}/index.html dest=/var/www/html/index.html

@@ -1,0 +1,6 @@
+---
+# essential tasks: should run on all nodes
+ - name: creating devops group
+   group: name=devops1 state=present
+ - name: create devops user
+   user: name=devops1 comment="DevOps User" uid=2001 group=devops
